@@ -4,7 +4,6 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .home {
-
   .sidebar {
     .text-holder {
       position: fixed;
@@ -729,6 +728,501 @@
           filter: brightness(0) invert(1);
         }
       }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .home {
+    .sidebar {
+      .text-holder {
+        display: none;
+      }
+    }
+
+    .section-banner {
+      padding-bottom: 0;
+      padding-top: 600px;
+
+      background: rgb(141,186,99);
+      background: linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
+      // background: url('../../assets/images/Banner-bg.png') repeat, linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
+
+      .image-holder {
+        .img-paw-bg {
+          position: absolute;
+          right: 20px;
+          top: 160px;
+
+          width: 340px;
+
+          opacity: 0.7;
+        }
+  
+        .img-paw {
+          position: absolute;
+          top: 67%;
+          left: 40px;
+
+          width: 70px;
+
+          opacity: 0.8;
+          filter: drop-shadow(2px 0px 2px black);
+        }
+  
+        .img-labrador {
+          display: none;
+        }
+  
+        .img-scroll {
+          display: none;
+        }
+      }
+
+      .text-holder {
+        position: absolute;
+        top: 265px;
+        left: 0;
+
+        .title {
+          padding: 0px 60px;
+          margin-right: 0;
+  
+          font-family: $font-ProximaNova-Semibold;
+          font-size: 50px;
+          letter-spacing: 0;
+          color: $off-white;
+          text-align: center;
+          word-spacing: 0;
+        }
+      }
+
+      .swiper-banner {
+        position: relative;
+        top: -200px;
+
+        filter: drop-shadow(2px 4px 5px black);
+
+        .swiper-button-prev {
+          position: absolute;
+          top: 33%;
+          right: 0;
+          left: -3px;
+
+          height: 20px;
+          opacity: 0.8;
+        }
+
+        .swiper-button-next {
+          position: absolute;
+          top: 33%;
+          right: -1px;
+
+          height: 20px;
+          opacity: 0.8;
+        }
+      }
+
+      .swiper-container {
+        display: block;
+        overflow: unset;
+      }
+
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 50px;
+        }
+      }
+
+      .swiper-slide {
+        display: contents;
+        width: 290px;
+
+        .img-banner-dogs {
+          display: inline-block;
+  
+          width: 100%;
+          height: fit-content;
+        }
+      }
+
+      .btn-holder {
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        
+        margin-top: 0;
+
+        .btn-orange-A {
+          width: 250px;
+          height: 50px;
+
+          border: none;
+          opacity: 1;
+
+          &:hover {
+            border: 1px solid $white;
+          }
+        }
+
+        .btn-text {
+          padding-top: 11px;
+
+          font-size: 20px;
+        }
+      }
+    }
+
+    .section-dog-boarding {
+      display: none;
+    }
+
+    .section-submission-form {
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-pet-award {
+      display: none;
+    }
+
+    .section-pet-care {
+      display: none;
+    }
+
+    .section-quotes {
+      display: none;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .home {
+    .sidebar {
+      .text-holder {
+        display: none;
+      }
+    }
+
+    .section-banner {
+      padding-bottom: 0;
+      padding-top: 600px;
+
+      background: rgb(141,186,99);
+      background: linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
+      // background: url('../../assets/images/Banner-bg.png') repeat, linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
+
+      .image-holder {
+        .img-paw-bg {
+          position: absolute;
+          right: 25px;
+          top: 155px;
+
+          width: 250px;
+
+          opacity: 0.7;
+        }
+  
+        .img-paw {
+          position: absolute;
+          top: 67%;
+          left: 35px;
+
+          width: 60px;
+
+          opacity: 0.7;
+          filter: drop-shadow(2px 0px 2px black);
+        }
+  
+        .img-labrador {
+          display: none;
+        }
+  
+        .img-scroll {
+          display: none;
+        }
+      }
+
+      .text-holder {
+        position: absolute;
+        top: 265px;
+        left: 0;
+
+        .title {
+          padding: 0px 60px;
+          margin-right: 0;
+  
+          font-family: $font-ProximaNova-Semibold;
+          font-size: 35px;
+          letter-spacing: 0;
+          color: $off-white;
+          text-align: center;
+          word-spacing: 0;
+        }
+      }
+
+      .swiper-banner {
+        position: relative;
+        top: -245px;
+
+        filter: drop-shadow(2px 4px 5px black);
+
+        .swiper-button-prev {
+          position: absolute;
+          top: 33%;
+          right: 0;
+          left: -3px;
+
+          height: 20px;
+          opacity: 0.8;
+        }
+
+        .swiper-button-next {
+          position: absolute;
+          top: 33%;
+          right: -1px;
+
+          height: 20px;
+          opacity: 0.8;
+        }
+      }
+
+      .swiper-container {
+        display: block;
+        overflow: unset;
+      }
+
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 50px;
+        }
+      }
+
+      .swiper-slide {
+        display: contents;
+        width: 290px;
+
+        .img-banner-dogs {
+          display: inline-block;
+  
+          width: 100%;
+          height: fit-content;
+        }
+      }
+
+      .btn-holder {
+        position: absolute;
+        top: 64%;
+        left: 35%;
+
+        margin-top: 0;
+
+        .btn-orange-A {
+          width: 200px;
+          height: 45px;
+
+          border: none;
+          opacity: 1;
+
+          &:hover {
+            border: 1px solid $white;
+          }
+        }
+
+        .btn-text {
+          padding-top: 11px;
+
+          font-size: 18px;
+        }
+      }
+    }
+
+    .section-dog-boarding {
+      display: none;
+    }
+
+    .section-submission-form {
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-pet-award {
+      display: none;
+    }
+
+    .section-pet-care {
+      display: none;
+    }
+
+    .section-quotes {
+      display: none;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .home {
+    .sidebar {
+      .text-holder {
+        display: none;
+      }
+    }
+
+    .section-banner {
+      padding-bottom: 0;
+      padding-top: 600px;
+
+      background: rgb(141,186,99);
+      background: linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
+      // background: url('../../assets/images/Banner-bg.png') repeat, linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
+
+      .image-holder {
+        .img-paw-bg {
+          position: absolute;
+          right: 5px;
+          top: 205px;
+  
+          width: 165px;
+
+          opacity: 0.4;
+        }
+  
+        .img-paw {
+          position: absolute;
+          top: 67.1%;
+          left: 20px;
+  
+          width: 45px;
+  
+          opacity: 0.5;
+          filter: drop-shadow(2px 0px 2px black);
+        }
+  
+        .img-labrador {
+          display: none;
+        }
+  
+        .img-scroll {
+          display: none;
+        }
+      }
+
+      .text-holder {
+        position: absolute;
+        top: 265px;
+        left: 0;
+
+        .title {
+          padding-left: 0;
+          margin-right: 0;
+  
+          font-family: $font-ProximaNova-Semibold;
+          font-size: 25px;
+          letter-spacing: 0;
+          color: $off-white;
+          text-align: center;
+          word-spacing: 0;
+        }
+      }
+
+      .swiper-banner {
+        position: relative;
+        top: -245px;
+
+        filter: drop-shadow(2px 4px 5px black);
+
+        .swiper-button-prev {
+          position: absolute;
+          top: 37%;
+          right: 0;
+          left: -7px;
+
+          height: 15px;
+          opacity: 0.8;
+        }
+
+        .swiper-button-next {
+          position: absolute;
+          top: 37%;
+          right: -7px;
+
+          height: 15px;
+          opacity: 0.8;
+        }
+      }
+
+      .swiper-container {
+        display: block;
+        overflow: unset;
+      }
+
+      .swiper-wrapper {
+        .swiper-slide {
+          width: 50px;
+        }
+      }
+
+      .swiper-slide {
+        display: contents;
+        width: 290px;
+
+        .img-banner-dogs {
+          display: inline-block;
+  
+          width: 100%;
+          height: fit-content;
+        }
+      }
+
+      .btn-holder {
+        position: absolute;
+        top: 64%;
+        left: 27%;
+
+        margin-top: 0;
+
+        .btn-orange-A {
+          width: 150px;
+          height: 40px;
+
+          border: none;
+          opacity: 1;
+
+          &:hover {
+            border: 1px solid $white;
+          }
+        }
+
+        .btn-text {
+          padding-top: 8px;
+
+          font-size: 16px;
+        }
+      }
+    }
+
+    .section-dog-boarding {
+      display: none;
+    }
+
+    .section-submission-form {
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-pet-award {
+      display: none;
+    }
+
+    .section-pet-care {
+      display: none;
+    }
+
+    .section-quotes {
+      display: none;
     }
   }
 }

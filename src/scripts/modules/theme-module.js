@@ -36,9 +36,9 @@ AppName.Modules.ThemeModule = (function () {
       prevEl: '.swiper-button-prev',
     },
 
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
+    pagination: {
+      el: '.swiper-pagination',
+    },
   });
 
   const swiperQuotes = new Swiper('.swiper-quotes .swiper-container', {

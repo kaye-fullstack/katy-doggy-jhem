@@ -46,3 +46,96 @@
     letter-spacing: -0.4px;
   }
 }
+
+@include respond-to(md) {
+  .section-header {
+    left: 0;
+    right: 0;
+
+    padding: 0;
+
+    .header-logo {
+      margin: 35px 15px;
+      width: 140px;
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      padding: 0px 10px;
+      margin-bottom: 25px;
+
+      .icon-bar {
+        margin-top: 0;
+        height: 3px;
+
+        background: $white;
+      }
+
+      .toggler-bar {
+        margin-top: 6px;
+      }
+    } 
+  }
+}
+
+@include respond-to(sm) {
+  .section-header {
+    left: 0;
+    right: 0;
+
+    padding: 0;
+
+    .header-logo {
+      margin: 35px 15px;
+      width: 140px;
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      padding: 0px 10px;
+      margin-bottom: 25px;
+
+      .icon-bar {
+        margin-top: 0;
+        height: 3px;
+
+        background: $white;
+      }
+
+      .toggler-bar {
+        margin-top: 6px;
+      }
+    } 
+  }
+}
+
+@include respond-to(xs) {
+  .section-header {
+    left: 0;
+    right: 0;
+
+    padding: 0;
+
+    .header-logo {
+      margin: 30px 10px;
+      width: 125px;
+    }
+
+    .navbar-toggler {
+      padding: 0;
+      padding: 0 5px;
+      margin-bottom: 25px;
+
+      .icon-bar {
+        margin-top: 0;
+        height: 3px;
+
+        background: $white;
+      }
+
+      .toggler-bar {
+        margin-top: 6px;
+      }
+    } 
+  }
+}
