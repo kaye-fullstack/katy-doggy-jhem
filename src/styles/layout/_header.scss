@@ -1,0 +1,48 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.section-header {
+  position: absolute;
+  left: 64px;
+  right: 184px;
+  z-index: 1;
+
+  padding: 45px 10px;
+  
+  .header-logo {
+    margin: 1px 110px;
+
+    color: $white;
+  }
+
+  .navbar-nav > li > a:hover {
+    text-decoration: none; 
+   
+    background: rgb(230,154,33);
+    background: linear-gradient(90deg, rgba(230,154,33,1) 0%, rgba(234,172,34,1) 45%, rgba(239,212,35,1) 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    overflow: hidden;
+  }
+
+  .navbar-nav > li > a:focus {
+    font-family: $font-ProximaNova-Bold;
+  }
+
+  .nav-item {
+    margin: 5px 16px;
+  }
+
+  .nav-link {
+    padding: 9px 34px;
+
+    font-family: $font-ProximaNova-Regular;
+    font-size: 18px;
+    color: $white;
+    letter-spacing: -0.4px;
+  }
+}

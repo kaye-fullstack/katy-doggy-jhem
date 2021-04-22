@@ -1,0 +1,14 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
+
+@include font-face($font-ProximaNova-Regular, $base-url + 'fonts/', 'ProximaNova-Regular', 'ProximaNova-Regular');
+
+@include font-face($font-ProximaNova-Semibold, $base-url + 'fonts/', 'ProximaNova-Semibold', 'ProximaNova-Semibold');
+
+@include font-face($font-ProximaNova-Bold, $base-url + 'fonts/', 'ProximaNova-Bold', 'ProximaNova-Bold');
+

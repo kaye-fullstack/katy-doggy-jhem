@@ -1,0 +1,57 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+$font-opensans: 'Open Sans';
+$font-ProximaNova-Regular: 'ProximaNova-Regular';
+$font-ProximaNova-Semibold: 'ProximaNova-Semibold';
+$font-ProximaNova-Bold: 'ProximaNova-Bold';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #222 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: #E50050 !default;
+
+/// Light grey
+/// @type Color
+$light-grey: #EDEDED !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: #999 !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: #444 !default;
+
+/// @type Color
+$white: #ffffff;
+$black: #000000;
+$blue-green: #077780;
+$orange: #e69a21;
+$light-green: #97d62a;
+$cream: #f2f1d2;
+$off-white: #fbfae9;
+$green: #98bf5d;
+$lime: #1dc32b;
+$dark-green:#067660;
+$sunny-yellow: #efd424;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '../assets/' !default;

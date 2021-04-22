@@ -1,0 +1,135 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-orange-A {
+  width: 432px;
+  height: 98px;
+
+  background-color: $orange;
+  border: 1px solid $white;
+  border-radius: 14px;
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $black;
+    outline: none;
+
+    transition: 0.2s ease-in;
+  }
+
+  .btn-text {
+    padding-top: 18px;
+
+    font-family: $font-ProximaNova-Semibold;
+    font-size: 35px;
+    color: $white;
+  }
+
+  .btn-text:hover {
+    color: $black;
+  }
+}
+
+.btn-orange-B {
+  margin-top: 22px;
+  width: 372px;
+  height: 77px;
+
+  background-color: $orange;
+  border: 1px solid $white;
+  border-radius: 14px;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all .2s ease-in-out; 
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $black;
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  .btn-text {
+    padding-top: 13px;
+    margin-left: 2px;
+
+    font-family: $font-ProximaNova-Semibold;
+    font-size: 35px;
+    color: $white;
+    letter-spacing: 0.7px;
+  }
+
+  .btn-text:hover {
+    color: $black;
+  }
+}
+
+.btn-right {
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+
+  width: 100px;
+  height: 100px;
+
+  background: rgb(239,212,35);
+  background: linear-gradient(90deg, rgba(239,212,35,1) 0%, rgba(146,215,126,1) 45%, rgba(54,223,185,1) 85%);
+  border: 1px solid $white;
+  border-radius: 50px;
+  -webkit-box-shadow: -20px 5px 50px 1px rgba(51,51,51,0.8); 
+  box-shadow: -20px 5px 50px 1px rgba(51,51,51,0.8);
+  outline: none;
+
+  cursor: pointer;
+
+  .btn-right:hover {
+    background-color: transparent;
+    border: 1px solid $white;
+    outline: none;
+
+    transition: 0.2s ease-in;
+  }
+
+  .btn-right:focus {
+    background-color: transparent;
+    border: 1px solid $white;
+    outline: none;
+
+    transition: 0.2s ease-in;
+  }
+}
+
+.btn-green {
+  width: 430px;
+  height: 95px;
+
+  background-color: $green;
+  border: 1px solid $white;
+  border-radius: 14px;
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $black;
+    outline: none;
+
+    transition: 0.2s ease-in;
+  }
+
+  .btn-text {
+    padding-top: 18px;
+
+    font-family: $font-ProximaNova-Semibold;
+    font-size: 35px;
+    color: $white;
+  }
+}

@@ -1,0 +1,239 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.section-footer {
+  .footer-top {
+    padding-bottom: 31px;
+
+    background: rgb(13,121,123);
+    background: linear-gradient(90deg, rgba(13,121,123,1) 0%, rgba(55,154,104,1) 35%, rgba(103,193,81,1) 65%);
+    -webkit-box-shadow: 0px 6px 25px 3px rgba(83,145,173,0.95);
+    -moz-box-shadow: 0px 6px 25px 3px rgba(83,145,173,0.95);
+    box-shadow: 0px 6px 25px 3px rgba(83,145,173,0.95);
+  
+    .text-holder {
+      .title {
+        padding-top: 21px;
+        margin-left: 2px;
+
+        font-family: $font-ProximaNova-Semibold;
+        font-size: 36px;
+        color: $off-white;
+        text-align: center;
+      }
+
+      .subtitle {
+        margin-top: -15px;
+   
+        font-family: $font-ProximaNova-Regular;
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.1px;
+        line-height: 27px;
+        color: $off-white;
+      }
+    }
+
+    .btn-holder {
+      margin-top: -23px;
+
+      text-align: center;
+    }
+  }
+
+  .footer-bottom {
+    position: relative;
+
+    background-image: url('../../assets/images/footer-green-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-top: 266px;
+    padding-bottom: 18px;
+  
+    .footer-black-dog {
+      position: absolute;
+      right: 0;
+
+      margin-top: -106px;
+
+      filter: drop-shadow(2px 4px 40px white);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .content-holder:first-child {
+        width: 27%;
+
+        .title {
+          padding-bottom: 25px;
+          margin-top: 6px;
+          margin-right: 19px;
+      
+          font-family: $font-ProximaNova-Regular;
+          font-size: 23px;
+          color: $off-white;
+          text-align: right;
+        }
+
+        .list-unstyled-pages {
+          text-align: right;
+        }
+
+        .list-unstyled-pages > li > a {
+          font-family: $font-ProximaNova-Regular;
+          font-size: 16px;
+          line-height: 8px;
+          color: $off-white;
+          text-decoration: none; 
+
+          background-color: transparent;
+          border: none;
+        }
+
+        .list-unstyled-pages > li > a:hover {
+          text-decoration: none; 
+
+          background: rgb(230,154,33);
+          background: linear-gradient(90deg, rgba(230,154,33,1) 0%, rgba(234,172,34,1) 45%, rgba(239,212,35,1) 85%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+         
+          overflow: hidden;
+        }
+
+        .list-group-item  {
+          font-family: $font-ProximaNova-Regular;
+          font-size: 16px;
+          line-height: 8px;
+          color: $off-white;
+          text-decoration: none; 
+
+          background-color: transparent;
+          border: none;
+        }
+      }
+
+      .content-holder:nth-child(2) {
+        .title {
+          padding-top: 40px;
+          margin-left: 45px;
+
+          font-family: $font-ProximaNova-Semibold;
+          font-size: 20px;
+          color: $off-white;
+          text-align: center;
+        } 
+        
+        .list-unstyled-social {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          margin-top: -10px;
+        }
+
+        .footer-logo {
+          margin-left: 77px;
+          width: 74%;
+        }
+
+        .list-group-item {
+          background-color: transparent;
+          border: none;
+
+          &:hover {
+            opacity: 0.7;
+
+            transition: all .2s ease-in-out; 
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .content-holder:last-child {
+        width: 31%;
+
+        .title {
+          padding-bottom: 25px;
+          padding-left: 63px;
+          margin-top: 6px;
+ 
+          font-family: $font-ProximaNova-Regular;
+          font-size: 22px;
+          color: $off-white;
+        }
+
+        .list-unstyled-links > li > a:hover {
+          text-decoration: none; 
+         
+          background: rgb(230,154,33);
+          background: linear-gradient(90deg, rgba(230,154,33,1) 0%, rgba(234,172,34,1) 45%, rgba(239,212,35,1) 85%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      
+          overflow: hidden;
+        }
+
+        .list-group-item {
+          padding-left: 23px;
+
+          font-family: $font-ProximaNova-Regular;
+          font-size: 16px;
+          line-height: 8px;
+          color: $off-white;
+          text-decoration: none; 
+
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+  
+    .text-holder {
+      padding-top: 89px;
+  
+      .title {
+        padding-bottom: 27px;
+
+        font-family: $font-ProximaNova-Regular;
+        font-size: 14px;
+        color: $off-white;
+        letter-spacing: 1px;
+        line-height: 12px;
+        text-align: center;
+      }
+
+      .desc-copyright {
+        font-family: $font-ProximaNova-Regular;
+        font-size: 14px;
+        color: $off-white;
+        letter-spacing: 0.2px;
+        text-align: center;
+      }
+
+      .desc-powered {
+        margin-top: -10px;
+
+        font-family: $font-ProximaNova-Regular;
+        font-size: 14px;
+        color: $off-white;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+  
