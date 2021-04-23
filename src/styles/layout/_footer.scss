@@ -46,7 +46,7 @@
   .footer-bottom {
     position: relative;
 
-    background-image: url('../../assets/images/footer-green-bg.png');
+    background-image: url('../assets/images/footer-green-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -230,6 +230,19 @@
         font-size: 14px;
         color: $off-white;
         text-align: center;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-footer {
+    .footer-top {
+      .btn-holder {
+        .btn-orange-B {
+          margin-top: 0;
+          width: 100px;
+        }
       }
     }
   }

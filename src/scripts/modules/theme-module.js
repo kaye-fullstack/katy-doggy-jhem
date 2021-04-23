@@ -7,7 +7,22 @@ AppName.Modules.ThemeModule = (function () {
   ////////////////////
   const _privateMethod = () => {
     // private stuff
-
+  
+    function lockScroll() {
+      if ($('body').hasClass('lock-scroll')) {
+          $('body').removeClass('lock-scroll');
+      }
+      else {
+          $('body').addClass('lock-scroll');
+      }
+    }  
+    
+    $(document).ready(function() {
+      $('.icon-bar').click(function() {
+         lockScroll();
+      }); 
+    });
+  
   const swiper = new Swiper('.swiper-container', {
       autoplay: {
         delay: 2500,
@@ -64,6 +79,7 @@ AppName.Modules.ThemeModule = (function () {
     _privateMethod();
     _swiperBanner();
     _swiperQuotes();
+    _lockScroll();
   };
 
   return {
