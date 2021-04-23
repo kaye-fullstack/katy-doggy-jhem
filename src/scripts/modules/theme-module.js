@@ -24,10 +24,10 @@ AppName.Modules.ThemeModule = (function () {
     });
   
   const swiper = new Swiper('.swiper-container', {
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
 
       navigation: {
         nextEl: '.swiper-button-next',
