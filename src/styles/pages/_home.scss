@@ -134,12 +134,6 @@
       }
     }
 
-    .swiper-container {
-      .swiper-slide {
-        padding-left: 57px;
-      }
-    }
-
     .img-paw-bg {
       position: absolute;
       right: 174px;
@@ -156,7 +150,7 @@
       position: absolute;
       top: 32%;
       right: 45px;
-      z-index: 2;
+      z-index: 1;
     }
 
     .img-labrador {
@@ -730,11 +724,242 @@
   }
 }
 
+@media screen and (max-width:1920px) {
+  .home {
+    .section-banner {
+      .swiper-banner {
+        .swiper-button-next {
+          right: 55px;
+        }
+  
+        .swiper-button-prev {
+          left: 91%;
+        }
+      }
+    }
+  }
+}
+
 @include respond-to(lg) {
   .home {
+    .scrollspy {
+      .paw-scrollspy {
+        top: 45%;
+      }
+    }
+
     .sidebar {
       .text-holder {
-        display: none;
+        position: absolute;
+        top: 35%;
+        right: 0;
+
+        width: 65px;
+        height: 250px;
+
+        .text {
+          margin-top: 120px;
+          width: 146px;
+
+          font-size: 22px;
+        }
+      }
+    }
+
+    .section-banner {
+      padding-bottom: 0;
+      padding-top: 500px;
+
+      .image-holder {
+        .img-paw-bg {
+          position: absolute;
+          right: 20px;
+          top: 160px;
+
+          width: 340px;
+
+          opacity: 0.7;
+        }
+  
+        .img-paw {
+          position: absolute;
+          top: 67%;
+          left: 40px;
+
+          width: 70px;
+
+          opacity: 0.8;
+          filter: drop-shadow(2px 0px 2px black);
+        }
+  
+        .img-labrador {
+          position: absolute;
+          right: 72px;
+          top: 600px;
+          z-index: 2;
+
+          width: 25%;
+        }
+  
+        .img-scroll {
+          position: absolute;
+          top: 31%;
+          right: -15px;
+          z-index: 1;
+
+          width: 150px;
+        }
+      }
+
+      .text-holder {
+        position: unset;
+        margin-top: -205px;
+        text-align: center;
+
+        .title {
+          padding: 0;
+          padding-left: 0;
+          margin-right: 0;
+  
+          font-family: $font-ProximaNova-Semibold;
+          font-size: 40px;
+          letter-spacing: 0;
+          color: $off-white;
+          text-align: center;
+          word-spacing: 0;
+        }
+      }
+
+      .swiper-banner {
+        position: relative;
+        top: -20px;
+
+        filter: drop-shadow(2px 4px 5px black);
+
+        // .swiper-button-prev {
+        //   position: absolute;
+        //   top: 33%;
+        //   right: 0;
+        //   left: 0;
+
+        //   height: 20px;
+        //   opacity: 0.8;
+        // }
+
+        // .swiper-button-next {
+        //   position: absolute;
+        //   top: 33%;
+        //   right: 0;
+
+        //   height: 20px;
+        //   opacity: 0.8;
+        // }
+      }
+
+      .swiper-container {
+        display: block;
+      }
+
+      .swiper-slide {
+        .img-banner-dogs {
+          width: 100%;
+        }
+      }
+
+      .btn-holder {
+        position: absolute;
+        top: 75%;
+        left: 35%;
+        z-index: 0;
+        
+        margin-top: 0;
+
+        .btn-orange-A {
+          width: 250px;
+          height: 50px;
+
+          border: none;
+          opacity: 1;
+
+          &:hover {
+            border: 1px solid $white;
+          }
+        }
+
+        .btn-text {
+          padding-top: 11px;
+
+          font-size: 20px;
+        }
+      }
+    }
+
+    .section-dog-boarding {
+      background-size: contain;
+
+      padding: 80px 0 200px 0;
+      height: unset;
+
+      .image-holder {
+        bottom: 295px;
+
+        .img-dog {
+          width: 50%;
+        }
+      }
+
+      .content-wrapper:first-child {
+        position: unset;
+
+        .text-holder {
+          padding: 0;
+          padding-bottom: 25px;
+
+          .heading {
+            font-size: 25px;
+          }
+  
+          .subheading {
+            padding: 0 150px;
+            margin-top: 30px;
+  
+            font-family: $font-ProximaNova-Semibold;
+            font-size: 16px;
+            letter-spacing: none;
+            color: $blue-green;
+            text-align: center;
+            line-height: 20px;
+          }
+
+          .text-greetings {
+            padding-top: 0;
+            margin-top: 30px;
+
+            font-size: 20px;
+          }
+        }
+      }
+
+      .content-wrapper:last-child {
+        margin-bottom: -195px;
+
+        .icon-items {
+          width: 100px;
+
+          .icon-list {
+            width: 100%;
+          }
+
+          .icon-text {
+            margin-top: 0;
+            padding-left: 0;
+            font-size: 13px;
+          }
+        }
+
+        .unstyled-list-icon {
+          padding: 20px 70px 0 70px;
+        }
       }
     }
 
@@ -915,57 +1140,32 @@
       }
     }
 
-    .section-submission-form {
-      .image-holder {
-        display: none;
+    .section-pet-award {
+      .img-dog-award {
+        position: absolute;
+        right: 0;
+        top: 25%;
+
+        width: 30%;
       }
 
       .text-holder {
+        text-align: left;
+
         .title {
-          font-size: 35px;
+          font-size: 40px;
         }
 
         .subtitle {
-          font-size: 18px;
-        }
-      }
-
-      .form-holder {
-        margin-top: 35px;
-
-        .row {
-          padding: 0;
-        }
-
-        .form-control {
-          height: 60px;
-
-          font-size: 15px;
-        }
-
-        .form-text {
-          height: 140px;
-          font-size: 15px;
-        }
-      }
-
-      .btn-holder {
-        margin-top: 15px;
-
-        text-align: left;
-
-        .btn-green {
+          padding-right: 35%;
           margin-top: 0;
-          width: 48%;
-          height: 60px;
+          font-size: 18px;
+          line-height: unset;
+        }
 
-          .btn-text {
-            padding-top: 14px;
-            
-            font-family: $font-ProximaNova-Semibold;
-            font-size: 23px;
-          }
-        }  
+        .text-greetings {
+          font-size: 30px;
+        }
       }
     }
 
@@ -1039,8 +1239,7 @@
 
       background: rgb(141,186,99);
       background: linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
-      // background: url('../../assets/images/Banner-bg.png') repeat, linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
-
+     
       .image-holder {
         .img-paw-bg {
           position: absolute;
@@ -1077,6 +1276,8 @@
         top: 265px;
         left: 0;
 
+        margin-top: 0;
+
         .title {
           padding: 0px 60px;
           margin-right: 0;
@@ -1100,7 +1301,7 @@
           position: absolute;
           top: 33%;
           right: 0;
-          left: -3px;
+          left: 0;
 
           height: 20px;
           opacity: 0.8;
@@ -1109,7 +1310,7 @@
         .swiper-button-next {
           position: absolute;
           top: 33%;
-          right: -1px;
+          right: 0;
 
           height: 20px;
           opacity: 0.8;
@@ -1118,24 +1319,11 @@
 
       .swiper-container {
         display: block;
-        overflow: unset;
-      }
-
-      .swiper-wrapper {
-        .swiper-slide {
-          width: 50px;
-        }
       }
 
       .swiper-slide {
-        display: contents;
-        width: 290px;
-
         .img-banner-dogs {
-          display: inline-block;
-  
           width: 100%;
-          height: fit-content;
         }
       }
 
@@ -1166,7 +1354,7 @@
         }
       }
     }
-
+    
     .section-dog-boarding {
       background-size: contain;
 
@@ -1587,8 +1775,7 @@
 
       background: rgb(141,186,99);
       background: linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
-      // background: url('../../assets/images/Banner-bg.png') repeat, linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
-
+    
       .image-holder {
         .img-paw-bg {
           position: absolute;
@@ -1625,6 +1812,8 @@
         top: 265px;
         left: 0;
 
+        margin-top: 0;
+
         .title {
           padding: 0px 60px;
           margin-right: 0;
@@ -1648,7 +1837,7 @@
           position: absolute;
           top: 33%;
           right: 0;
-          left: -3px;
+          left: 0;
 
           height: 20px;
           opacity: 0.8;
@@ -1657,7 +1846,7 @@
         .swiper-button-next {
           position: absolute;
           top: 33%;
-          right: -1px;
+          right: 0;
 
           height: 20px;
           opacity: 0.8;
@@ -1666,24 +1855,11 @@
 
       .swiper-container {
         display: block;
-        overflow: unset;
-      }
-
-      .swiper-wrapper {
-        .swiper-slide {
-          width: 50px;
-        }
       }
 
       .swiper-slide {
-        display: contents;
-        width: 290px;
-
         .img-banner-dogs {
-          display: inline-block;
-  
           width: 100%;
-          height: fit-content;
         }
       }
 
@@ -2120,8 +2296,7 @@
 
       background: rgb(141,186,99);
       background: linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
-      // background: url('../../assets/images/Banner-bg.png') repeat, linear-gradient(180deg, rgba(141,186,99,1) 0%, rgba(74,164,127,1) 45%, rgba(13,144,152,1) 85%);
-
+     
       .image-holder {
         .img-paw-bg {
           position: absolute;
@@ -2158,6 +2333,8 @@
         top: 265px;
         left: 0;
 
+        margin-top: 0;
+
         .title {
           padding-left: 0;
           margin-right: 0;
@@ -2178,21 +2355,19 @@
         filter: drop-shadow(2px 4px 5px black);
 
         .swiper-button-prev {
-          // display: none;
           position: absolute;
           top: 37%;
           right: 0;
-          left: -7px;
+          left: 0;
 
           height: 15px;
           opacity: 0.8;
         }
 
         .swiper-button-next {
-          // display: none;
           position: absolute;
           top: 37%;
-          right: -7px;
+          right: 0;
 
           height: 15px;
           opacity: 0.8;
@@ -2201,7 +2376,6 @@
 
       .swiper-container {
         display: block;
-        overflow: unset;
       }
 
       .swiper-wrapper {
@@ -2211,14 +2385,8 @@
       }
 
       .swiper-slide {
-        display: contents;
-        width: 290px;
-
         .img-banner-dogs {
-          display: inline-block;
-  
           width: 100%;
-          height: fit-content;
         }
       }
 
