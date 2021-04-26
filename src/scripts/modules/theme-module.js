@@ -72,6 +72,10 @@ AppName.Modules.ThemeModule = (function () {
     },
   });
 
+  $('body').scrollspy({
+    target: '.paw-scrollspy'
+  });
+
   /////////////////////
   // Public Methods //
   ///////////////////
