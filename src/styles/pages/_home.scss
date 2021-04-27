@@ -14,7 +14,7 @@
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       border-radius: .125rem 0 0 .125rem;
-      z-index: 1;
+      z-index: 1000;
     }
 
     .nav-item:nth-child(odd) {
@@ -40,7 +40,7 @@
 
     .fa-paw:before {
       content: "\f1b0";
-      filter: drop-shadow(2px 4px 11px black);
+      filter: drop-shadow(2px 4px 11px $black);
     }
   }  
 
@@ -103,6 +103,8 @@
     .swiper-banner {
       position: relative;
       top: 355px; 
+
+      padding-left: 57px;
  
       .swiper-button-prev {
         position: absolute;
@@ -189,7 +191,6 @@
   .section-dog-boarding {
     position: relative;
 
-    height: 864px;
     background-image: url('../assets/images/bottom-bg.png');
     background-repeat: no-repeat;
     background-image: center;
@@ -263,9 +264,9 @@
       .unstyled-list-icon {
         display: flex;
     
+        padding-top: 76px;
         padding-left: 75px;
-        padding-top: 81px;
-
+        
         list-style: none;
         text-decoration: none;
       }
@@ -283,7 +284,7 @@
       }
 
       .icon-items {
-        width: 200px;
+        width: 215px;
 
         .icon-text {
           margin-top: -15px;
@@ -320,7 +321,7 @@
      padding: 122px 0px;
     }
 
-    .image-text-holder {
+    .content-holder {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
@@ -638,27 +639,19 @@
   .section-quotes {
     position: relative;
 
-    padding: 148px 0px;
-
+    padding-top: 213px;
+    padding-bottom: 287px;
+ 
     background-color: $sunny-yellow;
 
-    .swiper-container {
-      padding-top: 60px;
+    .swiper-bg {
+      position: absolute;
+      top: 182px;
+      right: 360px;
     }
 
     .swiper-wrapper {
       .swiper-slide {
-        position: relative;
-
-        width: 1170px;
-        height: 644px;
-
-        background-image: url('../assets/images/bg-swiper.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: center;
-
         .title {
           padding-top: 12.5%;
          
@@ -708,6 +701,12 @@
         font-size: 20px;
         color: $blue-green;
       }
+    }
+
+    .swiper-pagination {
+      position: absolute;
+      top: 93%;
+      left: 47.1%;
     }
 
     .swiper-pagination-bullet {

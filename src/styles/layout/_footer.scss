@@ -132,23 +132,20 @@
           color: $off-white;
           text-align: center;
         } 
-        
-        .list-unstyled-social {
+
+        .icon-list {
           display: flex;
           flex-wrap: wrap;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
 
-          margin-top: -10px;
+          margin-top: 11px;
+
+          list-style-type: none;
         }
 
-        .footer-logo {
-          margin-left: 77px;
-          width: 74%;
-        }
-
-        .list-group-item {
+        .icon-item {
           background-color: transparent;
           border: none;
 
@@ -158,6 +155,11 @@
             transition: all .2s ease-in-out; 
             transform: scale(1.1);
           }
+        }
+
+        .footer-logo {
+          margin-left: 12px;
+          width: 107%;
         }
       }
 
@@ -174,18 +176,6 @@
           color: $off-white;
         }
 
-        .list-unstyled-links > li > a:hover {
-          text-decoration: none; 
-         
-          background: rgb(230,154,33);
-          background: linear-gradient(90deg, rgba(230,154,33,1) 0%, rgba(234,172,34,1) 45%, rgba(239,212,35,1) 85%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-      
-          overflow: hidden;
-        }
-
         .list-group-item {
           padding-left: 23px;
 
@@ -198,9 +188,32 @@
           background-color: transparent;
           border: none;
         }
+
+        .list-unstyled-links > li > a {
+          font-family: $font-ProximaNova-Regular;
+          font-size: 16px;
+          line-height: 8px;
+          color: $off-white;
+          text-decoration: none; 
+
+          background-color: transparent;
+          border: none;
+        }
+
+        .list-unstyled-links > li > a:hover {
+          text-decoration: none; 
+
+          background: rgb(230,154,33);
+          background: linear-gradient(90deg, rgba(230,154,33,1) 0%, rgba(234,172,34,1) 45%, rgba(239,212,35,1) 85%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+         
+          overflow: hidden;
+        }
       }
     }
-  
+
     .text-holder {
       padding-top: 89px;
   
@@ -213,6 +226,22 @@
         letter-spacing: 1px;
         line-height: 12px;
         text-align: center;
+    
+        &:hover {
+          text-decoration: none; 
+
+          background: rgb(230,154,33);
+          background: linear-gradient(90deg, rgba(230,154,33,1) 0%, rgba(234,172,34,1) 45%, rgba(239,212,35,1) 85%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        
+          overflow: hidden;
+        }
+      }
+
+      .desc-link > a:hover {
+        text-decoration: none;
       }
 
       .desc-copyright {
