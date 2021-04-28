@@ -736,33 +736,26 @@
         }
       }
     }
+
+    .section-quotes {
+      .swiper-bg {
+        right: 315px;
+      }  
+    }
   }
 }
 
-@include respond-to(lg) {
+@media screen and (min-width:1200px) and (max-width:1600px) {
   .home {
     .scrollspy {
       .paw-scrollspy {
         top: 45%;
+        left: 10px;
       }
     }
 
     .sidebar {
-      .text-holder {
-        position: absolute;
-        top: 35%;
-        right: 0;
-
-        width: 65px;
-        height: 250px;
-
-        .text {
-          margin-top: 120px;
-          width: 146px;
-
-          font-size: 22px;
-        }
-      }
+      display: none;
     }
 
     .section-banner {
@@ -793,20 +786,21 @@
   
         .img-labrador {
           position: absolute;
-          right: 72px;
-          top: 600px;
+          right: 35px;
+          top: 595px;
           z-index: 2;
 
-          width: 25%;
+          width: 335px;
         }
   
         .img-scroll {
-          position: absolute;
-          top: 31%;
-          right: -15px;
-          z-index: 1;
+          display: none;
+          // position: absolute;
+          // top: 31%;
+          // right: -15px;
+          // z-index: 1;
 
-          width: 150px;
+          // width: 150px;
         }
       }
 
@@ -835,24 +829,24 @@
 
         filter: drop-shadow(2px 4px 5px black);
 
-        // .swiper-button-prev {
-        //   position: absolute;
-        //   top: 33%;
-        //   right: 0;
-        //   left: 0;
+        .swiper-button-prev {
+          position: absolute;
+          top: 30%;
+          right: 0;
+          left: 10px;
 
-        //   height: 20px;
-        //   opacity: 0.8;
-        // }
+          height: 30px;
+          opacity: 0.8;
+        }
 
-        // .swiper-button-next {
-        //   position: absolute;
-        //   top: 33%;
-        //   right: 0;
+        .swiper-button-next {
+          position: absolute;
+          top: 30%;
+          right: 15px;
 
-        //   height: 20px;
-        //   opacity: 0.8;
-        // }
+          height: 30px;
+          opacity: 0.8;
+        }
       }
 
       .swiper-container {
@@ -867,28 +861,23 @@
 
       .btn-holder {
         position: absolute;
-        top: 75%;
-        left: 35%;
+        top: 77%;
+        left: 37%;
         z-index: 0;
-        
         margin-top: 0;
 
-        .btn-orange-A {
+        .btn-orange {
+          padding-top: 5px;
           width: 250px;
-          height: 50px;
+          height: 55px;
 
+          font-size: 23px;
           border: none;
           opacity: 1;
 
           &:hover {
             border: 1px solid $white;
           }
-        }
-
-        .btn-text {
-          padding-top: 11px;
-
-          font-size: 20px;
         }
       }
     }
@@ -912,14 +901,14 @@
 
         .text-holder {
           padding: 0;
-          padding-bottom: 25px;
+          padding-bottom: 75px;
 
           .heading {
-            font-size: 25px;
+            font-size: 30px;
           }
   
           .subheading {
-            padding: 0 150px;
+            padding: 0 190px;
             margin-top: 30px;
   
             font-family: $font-ProximaNova-Semibold;
@@ -934,13 +923,418 @@
             padding-top: 0;
             margin-top: 30px;
 
-            font-size: 20px;
+            font-size: 23px;
           }
         }
       }
 
       .content-wrapper:last-child {
-        margin-bottom: -195px;
+        padding: 0 30px;
+        margin-bottom: -205px;
+
+        .icon-items {
+          width: 100px;
+
+          .icon-list {
+            width: 100%;
+          }
+
+          .icon-text {
+            margin-top: 0;
+            padding-left: 0;
+            font-size: 13px;
+          }
+        }
+
+        .unstyled-list-icon {
+          padding: 20px 70px 0 70px;
+        }
+      }
+    }
+
+    .section-pet-care {
+      .content-holder:first-child {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 95%;
+
+        .text-holder {
+          padding: 0 85px;
+        }
+      }
+
+      .content-holder:nth-child(2) {
+        margin: 0;
+        margin-bottom: 30px;
+        width: 95%;
+
+        .text-holder {
+          padding: 0 85px;
+        }
+      }
+
+      .content-holder:last-child {
+        margin: 0;
+        width: 95%;
+
+        .text-holder {
+          padding: 0 85px;
+        }
+      }
+    }
+
+    .section-submission-form {
+      height: unset;
+
+      .text-holder {
+        .title {
+          padding-top: 80px;
+        }
+      }
+
+      .image-holder:first-child {
+        position: unset;
+        text-align: center;
+
+        .img-dog {
+          width: 400px;
+        }
+      }
+
+      .image-holder:last-child {
+        position: unset;
+
+        padding-top: 80px;
+        padding-bottom: 10px;
+      
+        text-align: center;
+
+        .img-dogfood {
+          width: 300px;
+        }
+      }
+    }
+
+    .section-pet-award {
+      .img-dog-award {
+        position: absolute;
+        right: 10px;
+        top: 35%;
+
+        width: 260px;
+      }
+
+      .text-holder {
+        margin-top: 65px;
+
+        text-align: left;
+
+        .title {
+          font-size: 40px;
+        }
+
+        .subtitle {
+          padding-right: 30%;
+          margin-top: 0;
+          font-size: 18px;
+          line-height: unset;
+        }
+
+        .text-greetings {
+          font-size: 30px;
+        }
+      }
+
+      .image-holder:first-child {
+        z-index: 0;
+
+        padding-top: 10%;
+        margin-right: 27px;
+
+        text-align: center;
+      }
+    }
+    
+    .section-quotes {
+      padding: 0;
+      padding-top: 30px;
+
+      background-color: $sunny-yellow;
+
+      .swiper-bg {
+        position: absolute;
+        top: 35px;
+        right: 0;
+
+        padding: 0; 
+        margin-right: 0; 
+
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+      }
+
+      .swiper-quotes {
+        padding-top: 175px;
+      }
+
+      .swiper-container {
+        padding-top: 0;
+      }
+
+      .swiper-slide {
+        height: 705px;
+
+        .customer-quote {
+          .title {
+            padding-top: 0;
+           
+            font-size: 35px;
+          }
+  
+          .subtitle {
+            padding: 0 40px;
+            margin-top: -7px;
+  
+            font-size: 18px;
+          }
+        }
+  
+        .content-holder {
+          margin-top: 25px;
+  
+          .img-customer {
+            padding-bottom: 25px;
+            width: 12%;
+          }
+  
+          .name {
+            font-size: 18px;
+          }
+  
+          .position {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        top: 85%;
+        left: 45%;
+      }
+
+      .swiper-pagination-bullet {
+        margin: 0 5px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .home {
+    .scrollspy {
+      .paw-scrollspy {
+        top: 45%;
+        left: 10px;
+      }
+    }
+
+    .sidebar {
+      display: none;
+      // .text-holder {
+      //   position: absolute;
+      //   top: 35%;
+      //   right: 0;
+
+      //   width: 65px;
+      //   height: 250px;
+
+      //   .text {
+      //     margin-top: 120px;
+      //     width: 146px;
+
+      //     font-size: 22px;
+      //   }
+      // }
+    }
+
+    .section-banner {
+      padding-bottom: 0;
+      padding-top: 500px;
+
+      .image-holder {
+        .img-paw-bg {
+          position: absolute;
+          right: 20px;
+          top: 160px;
+
+          width: 340px;
+
+          opacity: 0.7;
+        }
+  
+        .img-paw {
+          position: absolute;
+          top: 67%;
+          left: 40px;
+
+          width: 70px;
+
+          opacity: 0.8;
+          filter: drop-shadow(2px 0px 2px black);
+        }
+  
+        .img-labrador {
+          position: absolute;
+          right: 35px;
+          top: 595px;
+          z-index: 2;
+
+          width: 335px;
+        }
+  
+        .img-scroll {
+          display: none;
+          // position: absolute;
+          // top: 31%;
+          // right: -15px;
+          // z-index: 1;
+
+          // width: 150px;
+        }
+      }
+
+      .text-holder {
+        position: unset;
+        margin-top: -205px;
+        text-align: center;
+
+        .title {
+          padding: 0;
+          padding-left: 0;
+          margin-right: 0;
+  
+          font-family: $font-ProximaNova-Semibold;
+          font-size: 40px;
+          letter-spacing: 0;
+          color: $off-white;
+          text-align: center;
+          word-spacing: 0;
+        }
+      }
+
+      .swiper-banner {
+        position: relative;
+        top: -20px;
+
+        filter: drop-shadow(2px 4px 5px black);
+
+        .swiper-button-prev {
+          position: absolute;
+          top: 30%;
+          right: 0;
+          left: 10px;
+
+          height: 30px;
+          opacity: 0.8;
+        }
+
+        .swiper-button-next {
+          position: absolute;
+          top: 30%;
+          right: 15px;
+
+          height: 30px;
+          opacity: 0.8;
+        }
+      }
+
+      .swiper-container {
+        display: block;
+      }
+
+      .swiper-slide {
+        .img-banner-dogs {
+          width: 100%;
+        }
+      }
+
+      .btn-holder {
+        position: absolute;
+        top: 77%;
+        left: 37%;
+        z-index: 0;
+        margin-top: 0;
+
+        .btn-orange {
+          padding-top: 5px;
+          width: 250px;
+          height: 55px;
+
+          font-size: 23px;
+          border: none;
+          opacity: 1;
+
+          &:hover {
+            border: 1px solid $white;
+          }
+        }
+      }
+    }
+
+    .section-dog-boarding {
+      background-size: contain;
+
+      padding: 80px 0 200px 0;
+      height: unset;
+
+      .image-holder {
+        bottom: 295px;
+
+        .img-dog {
+          width: 50%;
+        }
+      }
+
+      .content-wrapper:first-child {
+        position: unset;
+
+        .text-holder {
+          padding: 0;
+          padding-bottom: 45px;
+
+          .heading {
+            font-size: 30px;
+          }
+  
+          .subheading {
+            padding: 0 190px;
+            margin-top: 30px;
+  
+            font-family: $font-ProximaNova-Semibold;
+            font-size: 16px;
+            letter-spacing: none;
+            color: $blue-green;
+            text-align: center;
+            line-height: 20px;
+          }
+
+          .text-greetings {
+            padding-top: 0;
+            margin-top: 30px;
+
+            font-size: 23px;
+          }
+        }
+      }
+
+      .content-wrapper:last-child {
+        padding: 0 30px;
+        margin-bottom: -205px;
 
         .icon-items {
           width: 100px;
@@ -968,7 +1362,7 @@
       .content-wrapper {
         padding: 60px 0;
 
-        .image-text-holder:first-child {
+        .content-holder:first-child {
           flex-wrap: nowrap;
 
           margin: 0;
@@ -1024,7 +1418,7 @@
           }
         }
 
-        .image-text-holder:nth-child(2) {
+        .content-holder:nth-child(2) {
           flex-wrap: nowrap;
 
           margin: 0;
@@ -1080,7 +1474,7 @@
           }
         }
 
-        .image-text-holder:last-child {
+        .content-holder:last-child {
           flex-wrap: nowrap;
 
           margin: 0;
@@ -1139,16 +1533,50 @@
       }
     }
 
+    .section-submission-form {
+      height: unset;
+
+      .text-holder {
+        .title {
+          padding-top: 80px;
+        }
+      }
+
+      .image-holder:first-child {
+        position: unset;
+        text-align: center;
+
+        .img-dog {
+          width: 400px;
+        }
+      }
+
+      .image-holder:last-child {
+        position: unset;
+
+        padding-top: 80px;
+        padding-bottom: 10px;
+      
+        text-align: center;
+
+        .img-dogfood {
+          width: 300px;
+        }
+      }
+    }
+
     .section-pet-award {
       .img-dog-award {
         position: absolute;
-        right: 0;
-        top: 25%;
+        right: 10px;
+        top: 35%;
 
-        width: 30%;
+        width: 260px;
       }
 
       .text-holder {
+        margin-top: 65px;
+
         text-align: left;
 
         .title {
@@ -1156,7 +1584,7 @@
         }
 
         .subtitle {
-          padding-right: 35%;
+          padding-right: 30%;
           margin-top: 0;
           font-size: 18px;
           line-height: unset;
@@ -1166,53 +1594,89 @@
           font-size: 30px;
         }
       }
+
+      .image-holder:first-child {
+        z-index: 0;
+
+        padding-top: 10%;
+        margin-right: 27px;
+
+        text-align: center;
+      }
     }
 
     .section-quotes {
-      padding: 30px 0px;
+      padding: 0;
+      padding-top: 30px;
 
       background-color: $sunny-yellow;
 
-      .image-wrapper {
-        .image-holder:first-child {
-          position: absolute;
-          left: 38%;
-          top: -4%;
-        }
+      .swiper-bg {
+        position: absolute;
+        top: 35px;
+        right: 0;
 
-        .image-holder:last-child {
-          position: absolute;
-          top: 10px;
-          left: 47%;
+        padding: 0; 
+        margin-right: 0; 
+
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+      }
+
+      .swiper-quotes {
+        padding-top: 175px;
+      }
+
+      .swiper-container {
+        padding-top: 0;
+      }
+
+      .swiper-slide {
+        height: 705px;
+
+        .customer-quote {
+          .title {
+            padding-top: 0;
+           
+            font-size: 35px;
+          }
+  
+          .subtitle {
+            padding: 0 40px;
+            margin-top: -7px;
+  
+            font-size: 18px;
+          }
+        }
+  
+        .content-holder {
+          margin-top: 25px;
+  
+          .img-customer {
+            padding-bottom: 25px;
+            width: 12%;
+          }
+  
+          .name {
+            font-size: 18px;
+          }
+  
+          .position {
+            font-size: 14px;
+          }
         }
       }
 
-      .customer-quote {
-        .title {
-          padding-top: 22%;
-
-          font-size: 30px;
-          text-align: center;
-        }
-      }
-
-      .content-holder {
-        margin-top: 30px;
-
-        .img-customer {
-          padding-bottom: 25px;
-        }
-
-        .name {
-          font-size: 25px;
-        }
-
-        .position {
-          font-size: 17px;
-        }
+      .swiper-pagination {
+        position: absolute;
+        top: 85%;
+        left: 45%;
       }
 
       .swiper-pagination-bullet {
+        margin: 0 5px;
         width: 12px;
         height: 12px;
       }
@@ -1291,6 +1755,7 @@
       }
 
       .swiper-banner {
+        padding-left: 0;
         position: relative;
         top: -200px;
 
@@ -1334,22 +1799,17 @@
         
         margin-top: 0;
 
-        .btn-orange-A {
+        .btn-orange {
           width: 250px;
           height: 50px;
 
+          font-size: 20px;
           border: none;
           opacity: 1;
 
           &:hover {
             border: 1px solid $white;
           }
-        }
-
-        .btn-text {
-          padding-top: 11px;
-
-          font-size: 20px;
         }
       }
     }
@@ -1407,7 +1867,7 @@
       .content-wrapper {
         padding: 60px 0;
 
-        .image-text-holder:first-child {
+        .content-holder:first-child {
           flex-wrap: nowrap;
 
           margin: 0;
@@ -1463,7 +1923,7 @@
           }
         }
 
-        .image-text-holder:nth-child(2) {
+        .content-holder:nth-child(2) {
           flex-wrap: nowrap;
 
           margin: 0;
@@ -1519,7 +1979,7 @@
           }
         }
 
-        .image-text-holder:last-child {
+        .content-holder:last-child {
           flex-wrap: nowrap;
 
           margin: 0;
@@ -1687,45 +2147,48 @@
     }
 
     .section-quotes {
-      padding: 30px 0;
+      padding: 0;
+      padding-top: 30px;
 
       background-color: $sunny-yellow;
 
-      .swiper-container {
-        padding-top: 0cm;
+      .swiper-bg {
+        position: absolute;
+        top: 35px;
+        right: 0;
+
+        padding: 0; 
+        margin-right: 0; 
+
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
       }
 
-      .swiper-wrapper {
-        .swiper-slide {
-          height: 705px;
-        }
+      .swiper-quotes {
+        padding-top: 175px;
+      }
+
+      .swiper-container {
+        padding-top: 0;
       }
 
       .swiper-slide {
-        padding: 30px 0;
-
-        .image-holder {
-          position: unset;
-          margin-top: -32px;
-          text-align: center;
-
-          .img-quotation-mark {
-            width: 25%;
-          }
-        }
+        height: 705px;
 
         .customer-quote {
           .title {
             padding-top: 0;
            
-            font-size: 35px;
+            font-size: 32px;
           }
   
           .subtitle {
-            padding: 0 35px;
-            margin-top: 0;
+            padding: 0 30px;
+            margin-top: -7px;
   
-            font-size: 18px;
+            font-size: 16px;
           }
         }
   
@@ -1745,6 +2208,12 @@
             font-size: 14px;
           }
         }
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        top: 85%;
+        left: 45%;
       }
 
       .swiper-pagination-bullet {
@@ -1830,6 +2299,8 @@
         position: relative;
         top: -190px;
 
+        padding-left: 0;
+
         filter: drop-shadow(2px 4px 5px black);
 
         .swiper-button-prev {
@@ -1870,21 +2341,17 @@
         margin-top: 0;
 
         .btn-orange {
+          padding-top: 3px;
           width: 200px;
           height: 45px;
 
+          font-size: 20px;
           border: none;
           opacity: 1;
 
           &:hover {
             border: 1px solid $white;
           }
-        }
-
-        .btn-text {
-          padding-top: 11px;
-
-          font-size: 18px;
         }
       }
     }
@@ -1942,7 +2409,7 @@
       .content-wrapper {
         padding: 60px 0;
 
-        .image-text-holder:first-child {
+        .content-holder:first-child {
           flex-wrap: wrap;
 
           margin: 0;
@@ -1995,7 +2462,7 @@
           }
         }
 
-        .image-text-holder:nth-child(2) {
+        .content-holder:nth-child(2) {
           flex-wrap: wrap;
 
           margin: 0;
@@ -2050,7 +2517,7 @@
           }
         }
 
-        .image-text-holder:last-child {
+        .content-holder:last-child {
           flex-wrap: wrap;
 
           margin: 0;
@@ -2212,32 +2679,35 @@
     }
 
     .section-quotes {
-      padding: 30px 0;
+      padding: 0;
+      padding-top: 30px;
 
       background-color: $sunny-yellow;
 
-      .swiper-container {
-        padding-top: 0cm;
+      .swiper-bg {
+        position: absolute;
+        top: 35px;
+        right: 0;
+
+        padding: 0; 
+        margin-right: 0; 
+
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
       }
 
-      .swiper-wrapper {
-        .swiper-slide {
-          height: 705px;
-        }
+      .swiper-quotes {
+        padding-top: 175px;
+      }
+
+      .swiper-container {
+        padding-top: 0;
       }
 
       .swiper-slide {
-        padding: 30px 0;
-
-        .image-holder {
-          position: unset;
-          margin-top: -32px;
-          text-align: center;
-
-          .img-quotation-mark {
-            width: 35%;
-          }
-        }
+        height: 705px;
 
         .customer-quote {
           .title {
@@ -2248,9 +2718,9 @@
   
           .subtitle {
             padding: 0 30px;
-            margin-top: 0;
+            margin-top: -7px;
   
-            font-size: 16px;
+            font-size: 15px;
           }
         }
   
@@ -2270,6 +2740,12 @@
             font-size: 14px;
           }
         }
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        top: 85%;
+        left: 43%;
       }
 
       .swiper-pagination-bullet {
@@ -2400,6 +2876,7 @@
         margin-top: 0;
 
         .btn-orange {
+          padding-top: 4px;
           width: 150px;
           height: 40px;
 
@@ -2734,12 +3211,31 @@
     }
 
     .section-quotes {
-      padding: 30px 0;
+      padding: 0;
+      padding-top: 30px;
 
       background-color: $sunny-yellow;
 
+      .swiper-bg {
+        position: absolute;
+        top: 35px;
+        right: 0;
+
+        padding: 0; 
+        margin-right: 0; 
+
+        width: 100%;
+        height: fit-content;
+
+        text-align: center;
+      }
+
+      .swiper-quotes {
+        padding-top: 175px;
+      }
+
       .swiper-container {
-        padding-top: 0cm;
+        padding-top: 0;
       }
 
       .swiper-wrapper {
@@ -2749,30 +3245,18 @@
       }
 
       .swiper-slide {
-        padding: 30px 0;
-
-        .image-holder {
-          position: unset;
-          margin-top: -32px;
-          text-align: center;
-
-          .img-quotation-mark {
-            width: 50%;
-          }
-        }
-  
         .customer-quote {
           .title {
             padding-top: 0;
            
-            font-size: 23px;
+            font-size: 20px;
           }
   
           .subtitle {
             padding: 0 30px;
             margin-top: -7px;
   
-            font-size: 14px;
+            font-size: 12px;
           }
         }
   
@@ -2781,7 +3265,7 @@
   
           .img-customer {
             padding-bottom: 25px;
-            width: 30%;
+            width: 25%;
           }
   
           .name {
@@ -2792,6 +3276,12 @@
             font-size: 14px;
           }
         }
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        top: 85%;
+        left: 38%;
       }
 
       .swiper-pagination-bullet {
