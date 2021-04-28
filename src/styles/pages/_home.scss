@@ -1869,7 +1869,7 @@
 
         margin-top: 0;
 
-        .btn-orange-A {
+        .btn-orange {
           width: 200px;
           height: 45px;
 
@@ -2351,6 +2351,8 @@
         position: relative;
         top: -210px;
 
+        padding-left: 0;
+
         filter: drop-shadow(2px 4px 5px black);
 
         .swiper-button-prev {
@@ -2397,22 +2399,17 @@
 
         margin-top: 0;
 
-        .btn-orange-A {
+        .btn-orange {
           width: 150px;
           height: 40px;
 
+          font-size: 18px;
           border: none;
           opacity: 1;
 
           &:hover {
             border: 1px solid $white;
           }
-        }
-
-        .btn-text {
-          padding-top: 8px;
-
-          font-size: 16px;
         }
       }
     }
@@ -2471,7 +2468,7 @@
         padding: 0;
         padding-top: 60px;
 
-        .image-text-holder:first-child {
+        .content-holder:first-child {
           flex-wrap: wrap;
 
           margin: 0;
@@ -2524,7 +2521,7 @@
           }
         }
 
-        .image-text-holder:nth-child(2) {
+        .content-holder:nth-child(2) {
           flex-wrap: wrap;
 
           margin: 0;
@@ -2579,7 +2576,7 @@
           }
         }
 
-        .image-text-holder:last-child {
+        .content-holder:last-child {
           flex-wrap: wrap;
 
           margin: 0;
